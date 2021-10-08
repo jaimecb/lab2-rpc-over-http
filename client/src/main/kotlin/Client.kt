@@ -43,7 +43,7 @@ class Client {
      */
     @Bean
     fun lookup(translatorClient: TranslatorClient) = CommandLineRunner {
-        val input = "Translate me!"
+        val input = "hello"
         val request = TranslationRequest().apply {
             langFrom = "en"
             langTo = "es"
